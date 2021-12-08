@@ -1,0 +1,350 @@
+body,
+html {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container-full {
+  width: 100%;
+  height: 100vh;
+}
+
+.header-top {
+  width: 100%;
+  height: 100px;
+  /* background-color: blue; */
+}
+
+.header-top img {
+  width: 175px;
+  margin: 30px;
+  transition: 0.5s;
+}
+
+.header-top img:hover {
+  opacity: 0.9;
+  transition: 0.5s;
+}
+
+.caixa-full {
+  width: 100%;
+  height: calc(100vh - 100px);
+
+  display: flex;
+  text-align: center;
+  padding-bottom: 5%;
+  /*  border-bottom: solid 1px #ccc; */
+}
+
+.caixa-left {
+  width: 60%;
+  display: flex;
+  /*  flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.caixa-left .card {
+  width: 70%;
+  height: 65%;
+  border: solid 1px #ccc;
+  margin: 10px 0px 0 30px;
+  cursor: pointer;
+  background: #6c63ff;
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px 5px #ccc;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.card a {
+  text-decoration: none;
+  color: white;
+}
+
+.card-img {
+  width: 100%;
+  height: 75%;
+  background: black;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+}
+
+.caixa-left .card:hover img {
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.caixa-right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.caixa-right img {
+  width: 100%;
+}
+
+a.btn {
+  text-decoration: none;
+  background: #6c63ff;
+  width: 25%;
+  padding: 15px;
+  color: white;
+  font-size: 18px;
+  transition: 0.5s;
+  box-shadow: 2px 2px 2px 2px #ccc;
+  transition: 0.5s;
+}
+
+a.btn:hover {
+  background-color: #3f3d56;
+  color: white;
+  transition: 0.5s;
+}
+
+/* estilo containers informações */
+
+.container-info1 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-info1 .containerInfo-left {
+  width: 55%;
+  height: 100vh;
+  background-color: aqua;
+  border-right: solid white;
+}
+
+.container-info1 .containerInfo-right {
+  width: 45%;
+  height: 100vh;
+  background-color: #6c63ff;
+  padding: 0px 25px;
+  text-align: justify;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 100px 0px 0px 100px;
+}
+
+.containerInfo-right p {
+  color: white;
+  font-size: 25px;
+}
+
+.containerInfo-left img {
+  width: 100%;
+  height: 100%;
+}
+
+.parallax-container {
+  margin-top: 10%;
+  width: 100%;
+  height: 400px;
+  background-color: black;
+
+  background-image: url("image/paralax-img.jpg");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.parallax-container h1 {
+  color: white;
+  font-size: 50px;
+  margin-right: 2%;
+}
+
+.detalhes-cards {
+  margin-top: 5%;
+  width: 100%;
+  height: 100vh;
+  /*  background-color: black; */
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.detalhes {
+  border: solid;
+  height: 45%;
+  width: 255px;
+  padding: 15px;
+  background-color: #6c63ff;
+  color: white;
+  cursor: pointer;
+  box-shadow: 10px 10px 10px 1px #ccc;
+  border-radius: 5px;
+}
+
+.detalhes .icon {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.icon i {
+  font-size: 70px;
+}
+
+.detalhes ul li {
+  margin-bottom: 15px;
+}
+
+.contato-form {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contato-form .form-img {
+  width: 50%;
+  height: 100vh;
+  background-color: tomato;
+
+  background-image: url("image/form-img.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.form-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.contato-form .form-dados {
+  height: 100vh;
+  width: 50%;
+  background-color: #6c63ff;
+  border-radius: 100px 0px 0px 100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.form-dados h1 {
+  text-align: center;
+  color: white;
+}
+
+form.formulario input {
+  margin: 0px 0px 10px;
+  height: 35px;
+  width: 305px;
+  /* border-radius: 8px; */
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+
+textarea {
+  width: 305px;
+  outline: none;
+  padding: 10px;
+}
+
+.form-dados button {
+  border: none;
+  width: 200px;
+  height: 45px;
+}
+
+.form-dados button {
+  border: none;
+  width: 200px;
+  height: 45px;
+
+  background: white;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.form-dados button:hover {
+  background-color: #3f3d56;
+  color: white;
+  transition: 0.5s;
+}
+
+.input-btn {
+  text-align: center;
+}
+
+.input-btn input:focus-within {
+  border: 2px solid green;
+  box-shadow: 0 0 5px 5px green;
+  transition: 0.5s;
+}
+
+.input-btn textarea:focus-within {
+  border: 2px solid green;
+  box-shadow: 0 0 5px 5px green;
+  transition: 0.5s;
+}
+
+.footer-container {
+  width: 100%;
+  height: 200px;
+  margin-top: 5%;
+  background-color: #3f3d56;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.footer-info h2, p{
+  text-align: center;
+  color: white;
+}
+
+
+#foguete{
+  position: relative;
+  margin-left: 10px;
+  transform: rotate(315deg);
+  animation: mymove 4s infinite;
+}
+
+@keyframes mymove {
+  from {top: 120px;}
+  to {top: 0px;}
+  
+}
+
+
+
+
+
+
+

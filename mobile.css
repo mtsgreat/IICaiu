@@ -1,0 +1,80 @@
+@media only screen and (max-width: 600px) {
+    .header-top img {
+      width: 65%;
+    }
+  
+    .caixa-full {
+      height: calc(100vh - 200px);
+    }
+  
+    .caixa-left {
+      display: none;
+    }
+    .caixa-right {
+      display: block;
+      width: 100%;
+    }
+  
+    .header-top {
+      width: 100%;
+      height: 30%;
+      text-align: center;
+    }
+  
+    a.btn {
+      width: 40%;
+    }
+  
+    .caixa-right img {
+      margin-bottom: 5%;
+    }
+  
+    .containerInfo-left {
+      display: none;
+    }
+  
+    .containerInfo-right p {
+      color: white;
+      font-size: 19px;
+    }
+  
+    .container-info1 {
+      display: block;
+    }
+  
+    .container-info1 .containerInfo-right {
+      width: 85%;
+    }
+  
+    .parallax-container {
+      background-position: center;
+    }
+  
+    .parallax-container h1 {
+      text-align: center;
+    }
+  
+    .detalhes-cards {
+      display: block;
+    }
+  
+    .detalhes {
+      width: 90%;
+  
+      margin-bottom: 15px;
+    }
+  
+    .contato-form {
+      margin-top: 500px;
+    }
+  
+    .contato-form .form-dados {
+      width: 100%;
+      align-items: center;
+      border-radius: 0;
+    }
+  
+    .form-img {
+      display: none;
+    }
+  }
